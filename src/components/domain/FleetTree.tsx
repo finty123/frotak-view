@@ -1,0 +1,10 @@
+import { useState } from 'react';
+import { RiArrowDownSLine, RiBuilding2Line, RiTruckLine, RiSearchLine } from '@remixicon/react';
+import { vehicles } from '@/data/mock-data';
+import { cn } from '@/lib/utils';
+
+export function FleetTree({ selected, onSelect, compact }: { selected?: string; onSelect?: (plate: string) => void; compact?: boolean }) {
+  const [query, setQuery] = useState('');
+  const filtered = vehicles.filter((vehicle) => vehicle.plate.toLowerCase().includes(query.toLowerCase()));
+  return <div className={cn('flex h-full min-h-[380px] flex-col border-r border-[#e7e9ee] bg-white', compact ? 'w-full' : 'w-[300px]')}><div className="border-b border-[#e7e9ee] p-3"><div className="relative"><RiSearchLine className="absolute left-3 top-2.5 size-4 text-[#9aa1ad]" /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Placa ou dispositivo" className="h-9 w-full rounded-lg border border-[#dfe3ea] pl-9 pr-3 text-xs outline-none focus:border-[#9bb2ff]" /></div></div><div className="min-h-0 flex-1 overflow-y-auto p-2 scrollbar-thin"><div className="flex items-center gap-2 px-2 py-2 text-xs font-semibold text-[#343945]"><RiArrowDownSLine className="size-4" /><RiBuilding2Line className="size-4 text-[#335cff]" />Todas as frotas <span className="ml-auto text-[10px] text-[#8b92a0]">{filtered.length}</span></div><div className="ml-4 border-l border-[#e1e4ea] pl-2">{filtered.map((vehicle) => <button key={vehicle.id} onClick={() => onSelect?.(vehicle.plate)} className={cn('flex w-full items-center gap-2 rounded-lg px-2 py-2 text-left text-xs transition hover:bg-[#f4f6f9]', selected === vehicle.plate && 'bg-[#edf2ff] text-[#2547d0]')}><span className={cn('size-2 rounded-full', vehicle.status === 'Offline' ? 'bg-[#9aa1ad]' : vehicle.status === 'Marcha lenta' ? 'bg-[#d9850b]' : 'bg-[#1f9d62]')} /><RiTruckLine className="size-4" /><span className="flex-1 font-semibold">{vehicle.plate}</span><span className="text-[9px] text-[#8b92a0]">{vehicle.lastSeen}</span></button>)}</div></div></div>;
+}

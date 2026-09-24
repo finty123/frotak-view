@@ -1,0 +1,60 @@
+id,produto,tipo,modulo,superficie,rota_ou_origem,exibicao_principal,funcoes_principais,evidencia,lacuna_principal,referencia
+G01,Compartilhado,Shell,Global,Shell autenticado,Todas as rotas,Topbar sidebar breadcrumb e canvas,Navegar recolher menu indicar rota ativa,Testado,Permissões e responsividade precisam ser definidos,00/01
+G02,Compartilhado,Popover,Topbar,Seletor de produtos,Grade da topbar,FT Vision e FT Manager,Alternar produto fechar por Esc/clique,Testado,Efeito sobre contexto/sessão,01
+G03,Compartilhado,Modal,Topbar,Busca global,Lupa da topbar,Campo resultados e estado vazio,Pesquisar selecionar resultado e fechar,Testado sem termo,Catálogo e ranking de resultados,01
+G04,Compartilhado,Menu,Topbar,Idioma,Globo/PT,English Español Português Brasil,Selecionar idioma,Inspecionado sem troca,Persistência e cobertura de tradução,01
+G05,Compartilhado,Drawer,Central do usuário,Dados do usuário,Avatar,Conta contato senha celular e compartilhamento,Editar revelar vincular modificar compartilhar,Inspecionado sem alteração,Fluxos sensíveis e MFA,01
+G06,Compartilhado,Drawer,Central do usuário,Notificações,Sino,Não lido lido todos e mensagens,Filtrar atualizar marcar como lido paginar,Testado sem mutação,Retenção e navegação ao objeto,01
+G07,Compartilhado,Drawer,Central do usuário,Ferramentas,Aba Ferramenta,DiskTool e LocalPlayer,Baixar utilitários,Não executado,Integridade plataforma e atualização,01
+G08,Compartilhado,Drawer,Central do usuário,Sobre,Aba Sobre,Versão lançamento e requisitos,Consultar compatibilidade,Testado,Política de atualização,01
+G09,Compartilhado,Drawer,Central do usuário,Downloads,Atalho de downloads,Sucesso baixando aguardando falha,Baixar excluir atualizar configurar e paginar,Testado sem baixar/excluir,Retry expiração e permissões,01
+G10,Compartilhado,Dialog,Topbar,Logout,Ícone energia,Confirmação de saída,Confirmar ou cancelar,Testado e cancelado,Efeito pós-confirmação,01
+G11,Compartilhado,Navegação,Global,Sidebar,Todas as rotas,Grupos itens filhos e ativo,Expandir recolher navegar,Testado,Comportamento mobile e favoritos,00
+V01,FT Vision,Rota,Dashboard,Dashboard,/ftv/ft/dashboard,KPIs riscos rankings e pendências,Drill-down e alternar entidade,Verificada,Interações dos gráficos/atalhos completos,02
+V02,FT Vision,Rota,Monitoramento,Monitoramento de Veículos,/ftv/ft/realtime-monitoring,Rail de ativos e mapa,Buscar selecionar favoritar abrir ações,Verificada,Live video áudio e compartilhamento não percorridos,02
+V03,FT Vision,Rota,Monitoramento,Histórico de trajeto,/ftv/ft/track-playback,Viagens métricas mapa timeline,Consultar alternar OBD/GPS reproduzir e correlacionar vídeo,Verificada,Estados com lacunas e vídeo real,02
+V04,FT Vision,Rota,Monitoramento,Monitoramento de Riscos,/ftv/ft/decision-tree,Filtros tabela expansão e auto refresh,Filtrar expandir atualizar 30/60s,Verificada,Conteúdo expandido e atualização real,02
+V05,FT Vision,Rota,Evidências,Reprodução de vídeo,/ftv/playback-device,Seletor veículo/data player/timeline,Carregar e reproduzir canais,Verificada no vazio,Três controles e estado populado,03
+V06,FT Vision,Rota,Evidências,Biblioteca de vídeo,/ftv/ft/video-list,Abas de tarefa filtros e acervo,Adicionar excluir classificar favoritar e selecionar,Verificada no vazio,Pós-solicitação e tarefas populadas,03
+V07,FT Vision,Rota,Evidências,Lista de Alertas,/ftv/ft/new-alarm-list,Filtros grid/lista e cartões,Validar rejeitar favoritar enviar exportar compartilhar vincular,Verificada sem mutações,Efeitos pós-confirmação e lote,03
+V08,FT Vision,Rota,Evidências,Detalhe do alarme,/ftv/ft/new-alarm-detail,Metadados mídia mapa e auditorias,Alternar contexto e consultar trilhas,Verificada com sem vídeo,Estado multicanal populado,03
+V09,FT Vision,Rota,Relatórios,Análises de Segurança,/ftv/ft/security-center/analyse,Filtros score gráficos heatmap ranking,Alternar dimensão/peso e filtrar,Verificada,Fórmula/pesos configuráveis e drill-down,04
+V10,FT Vision,Rota,Relatórios,Lista de riscos de condução,/ftv/ft/report-center/risk-driving-list,Abas cards e tabela ampla,Comparar filtrar ordenar e paginar,Verificada no vazio,Linhas populadas e navegação,04
+V11,FT Vision,Rota,Relatórios,Gestão de Relatórios,/ftv/ft/report-manage,Busca e cards de modelos,Buscar visualizar e iniciar relatório,Verificada,Rótulos Desativar/Entrar ambíguos,04
+V12,FT Vision,Rota,Relatórios,E-mail agendado,/ftv/ft/scheduled-tasks/list,Filtros e tabela de tarefas,Adicionar excluir e administrar,Verificada no vazio,Estados populados e edição,04
+V13,FT Vision,Rota,Relatórios,Adicionar tarefa de e-mail,/ftv/ft/scheduled-tasks/create,Stepper configuração/escopo,Definir destinatários ciclo horário e escopo,Verificada sem salvar,Pós-salvar entrega e histórico,04
+V14,FT Vision,Rota,Relatórios,Relatório de resumo mensal,/ftv/ft/report-form/monthly-summary,Árvore mês KPIs e cinco abas,Filtrar/resetar e alternar indicador,Verificada,Drill-down/exportação,04
+V15,FT Vision,Rota,Relatórios,Status de transmissão,/ftv/ft/report-form/car-online,Árvore período estatística e detalhes,Consultar disponibilidade e indisponibilidade,Verificada,Semântica dos motivos de offline,04
+V16,FT Vision,Rota,Relatórios,Última localização,/ftv/ft/report-form/last-state-statistics,Árvore abas e tabela,Alternar GPS/online e consultar último estado,Verificada no vazio,Estado populado e link ao mapa,04
+V17,FT Vision,Rota,Relatórios,Relatório de posição,/ftv/ft/report-form/location-statistics,Árvore agregado e detalhe,Filtrar e alternar visão,Verificada,Colunas detalhadas e exportação,04
+V18,FT Vision,Rota,Consumo,Visão geral do dispositivo celular,/ftv/flow/flow-preview,KPIs composição série e ranking,Alternar mensal/diário e filtrar,Verificada,Franquia/base de cálculo,05
+V19,FT Vision,Rota,Consumo,Lista de celulares do dispositivo,/ftv/flow/flow-manage,Árvore resumos e tabela,Filtrar paginar e abrir placa,Verificada,Tratamento e ações funcionais,05
+V20,FT Vision,Rota,Consumo,Detalhes de tráfego,/ftv/flow/flow-manage/detail,Total por função e dia,Alternar serial/competência e investigar pico,Verificada,Interação do detalhe diário,05
+V21,FT Vision,Rota,Identificação,Avaliação de Motorista desconhecido,/ftv/ft/system/unknown-driver-alarm,Abas filtros seleção e fila,Marcar/processar seleção,Verificada no vazio,Pós-tratamento e reclassificação,06
+V22,FT Vision,Rota,Gestão,Frota,/ftv/ft/fleet-manage,Filtro tabela hierárquica e auditoria,Adicionar excluir selecionar e navegar,Verificada,Exclusão/edição e dependências,06
+V23,FT Vision,Rota,Gestão,Adicionar frota,/ftv/ft/fleet-manage/add-fleet,Formulário hierarquia e metadados,Salvar ou cancelar,Verificada sem salvar,Validações e pós-criação,06
+V24,FT Vision,Rota,Gestão,Gestão de Veículos,/ftv/ft/vehicle-manage,Filtros tabela dispositivo/SIM/canais,Filtrar transferir editar abrir detalhe,Verificada,Transferência/edição pós-confirmação,06
+V25,FT Vision,Rota,Gestão,Detalhe do veículo,/ftv/ft/vehicle-manage/detail,Básico dispositivo e CH1-CH8,Editar e configurar canais,Verificada,Persistência e regras de canal,06
+V26,FT Vision,Rota,Gestão,Motorista,/ftv/ft/driver-manage/driver,Filtros lista e ações,Adicionar excluir editar e filtrar,Verificada no vazio,Estado populado e edição,06
+V27,FT Vision,Rota,Gestão,Adicionar motorista,/ftv/ft/driver-manage/driver/add-driver,Formulário identidade/frota/foto,Upload salvar e cancelar,Verificada sem salvar,Privacidade biométrica e validações,06
+M01,FT Manager,Rota,Lista de eventos,Notificação de alerta,/ftm/ft/alarm-notification,Descrição filtros e tabela de prioridade,Filtrar e consultar configuração,Verificada no vazio,Criação indisponível ao perfil,10
+M02,FT Manager,Rota,Configuração,Registro de login,/ftm/login-log,Cards filtros e logs,Segmentar filtrar exportar e configurar,Verificada,Estados/traduções e retenção,10
+M03,FT Manager,Rota,Usuários,Usuário,/ftm/user-manage,Filtros tabela contato/escopo/auditoria,Adicionar ativar revelar editar e excluir,Verificada sem mutações,Permissões elevadas e pós-ação,10
+M04,FT Manager,Rota,Usuários,Adicionar usuário,/ftm/ft/user-manage/add,Stepper dados/função/escopo,Preencher mostrar senha salvar e seguir,Verificada sem salvar,Matriz real de funções/dados,10
+M05,FT Manager,Rota,Tarefas,Vídeo da evidência,/ftm/ft/evidence-list,Abas filtros cards e modos,Selecionar visualizar enviar compartilhar,Verificada,Operações dos ícones e estados não concluídos,10
+M06,FT Manager,Rota,Tarefas,Detalhes de evidência,/ftm/ft/evidence/detail,Metadados mosaico timeline e mapa,Reproduzir alternar canal compartilhar/exportar,Verificada sem ações externas,Nomes/efeitos dos seis atalhos,10
+M07,FT Manager,Rota,Tarefas,Tarefas de download de áudio,/ftm/task/issue-audio,Abas período e tabela de progresso,Filtrar atualizar e administrar tarefa,Verificada no vazio,Falha/retry/cancelamento,10
+M08,FT Manager,Rota,Embarcadores,Regras de Compartilhamento,/ftm/ft/shipper-vehicle,Árvore filtros tabela e toolbar,Criar validar filtrar exportar,Verificada no vazio,Pós-validação e estados populados,10
+M09,FT Manager,Rota,Embarcadores,Criar Regra,/ftm/ft/shipper-vehicle/auth,Duas colunas e resumos selecionados,Adicionar/deletar veículos/embarcadores e salvar,Verificada sem salvar,Pós-criação vigência e revogação,10
+O01,FT Vision,Fluxo derivado,Monitoramento,Vídeo em tempo real,Menu do veículo,Visualização ao vivo multicanal,Abrir/assistir canais,Somente item de menu,Layout controles e consumo,02/13
+O02,FT Vision,Fluxo derivado,Monitoramento,Envio de áudio,Menu do veículo,Fluxo de transmissão ao equipamento,Selecionar áudio/enviar,Somente item de menu,Formato confirmação progresso e auditoria,02/13
+O03,FT Vision,Fluxo derivado,Monitoramento,Compartilhamento de viagem,Menu do veículo,Configuração de compartilhamento,Criar/revogar link ou destinatário,Somente item de menu,Escopo validade privacidade e auditoria,02/13
+O04,FT Vision,Drawer,Evidências,Solicitação de vídeo,Adicionar na biblioteca,Veículos tempo duração tipo canais rede velocidade,Salvar/cancelar solicitação,Inspecionado sem salvar,Pós-criação estimativa e interrupção,03
+O05,FT Vision,Menu contextual,Evidências,Ações do alerta,Card selecionado,Validação favorito e ações externas,Executar ação individual,Inspecionado sem mutação,Confirmação efeitos e permissões,03
+O06,FT Vision,Fluxo derivado,Evidências,Validação/rejeição de evento,X check e botão de validação,Classificação/tratamento do alerta,Validar rejeitar e justificar,Não executado,Formulário resultado e reversão,03/13
+O07,FT Vision,Fluxos derivados,Evidências,Distribuição de evidência,Menu do alerta,E-mail relatório evidências share e vínculo,Enviar/exportar/compartilhar/vincular,Não executado,Destinatários formato expiração e auditoria,03/13
+O08,FT Vision,Modal,Relatórios,Prévia de relatório,Visualização do modelo,Miniatura/estrutura do relatório,Fechar percorrer/confirmar,Testado parcialmente,Rótulos e geração não confirmados,04
+O09,FT Manager,Modal,Embarcadores,Selecionar veículos,Adicionar veículo,Filtros lista selecionados e contador,Selecionar limpar confirmar/cancelar,Testado sem seleção,Escopo grande e seleção paginada,10
+O10,FT Manager,Modal,Embarcadores,Selecionar embarcadores,Adicionar embarcador,Filtro lista hierarquia e selecionados,Selecionar paginar confirmar/cancelar,Testado sem seleção,Seleção através de páginas,10
+O11,FT Vision,Dependência,Evidências,Selecionar veículo/data,Reprodução de vídeo,Veículo habilita data e gravações,Selecionar na ordem e carregar,Inspecionado,Comportamento com gravação,03
+O12,Compartilhado,Padrão transversal,Listas,Filtros tabelas e paginação,Várias telas,Cards de filtros tabelas abas e estados,Aplicar limpar recolher ordenar paginar selecionar,Testado em amostras,Comportamento uniforme em todas as rotas,00/07

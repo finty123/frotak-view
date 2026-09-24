@@ -1,0 +1,16 @@
+# Agent Jaxx local telemetry and generated evidence
+.agent.session.json
+.agent/*.jsonl
+.agent/cache/
+.agent/vectors/
+.agent/quality/
+.agent/tmp/
+.agent/sessions/
+
+# Frontend dependencies and generated output
+node_modules/
+dist/
+coverage/
+.vite/
+*.local
+.DS_Store

@@ -1,0 +1,37 @@
+grupo,tela,rota_verificada,origem_de_acesso,estado
+Global,Dashboard,/ftv/ft/dashboard,Menu lateral,Verificada
+Monitoramento em Tempo Real,Monitoramento de Veículos,/ftv/ft/realtime-monitoring,Menu lateral,Verificada
+Monitoramento em Tempo Real,Monitoramento de Riscos,/ftv/ft/decision-tree?driverType=driver&includeSubFleet=0&vehicleType=vehicle,Menu lateral,Verificada
+Monitoramento em Tempo Real,Histórico de trajeto,/ftv/ft/track-playback?vehicleId=…&vehicleNumber=RQX6A36,Menu contextual do veículo,Verificada
+Centro de Evidências,Reprodução de vídeo,/ftv/playback-device,Menu lateral,Verificada
+Centro de Evidências,Biblioteca de vídeo,/ftv/ft/video-list?…,Menu lateral,Verificada
+Centro de Evidências,Lista de Alertas,/ftv/ft/new-alarm-list?…,Menu lateral,Verificada
+Centro de Evidências,Detalhe do alarme,/ftv/ft/new-alarm-detail/{id}?hasEvidence=1&resourceType=default,Cartão de alerta,Verificada
+Centro de Relatórios,Análises de Segurança,/ftv/ft/security-center/analyse,Menu lateral,Verificada
+Centro de Relatórios,Lista de riscos de condução,/ftv/ft/report-center/risk-driving-list,Menu lateral,Verificada
+Centro de Relatórios,Gestão de Relatórios,/ftv/ft/report-manage,Menu lateral,Verificada
+Centro de Relatórios,E-mail agendado,/ftv/ft/scheduled-tasks/list,Menu lateral,Verificada
+Centro de Relatórios,Adicionar tarefa de e-mail,/ftv/ft/scheduled-tasks/create,Botão Adicionar,Verificada sem salvar
+Centro de Relatórios,Relatório de resumo mensal,/ftv/ft/report-form/monthly-summary,Menu lateral,Verificada
+Centro de Relatórios,Status de transmissão,/ftv/ft/report-form/car-online,Menu lateral,Verificada
+Centro de Relatórios,Última localização,/ftv/ft/report-form/last-state-statistics,Menu lateral,Verificada
+Centro de Relatórios,Relatório de posição,/ftv/ft/report-form/location-statistics,Menu lateral,Verificada
+Centro de Consumo de Dados,Visão geral do dispositivo celular,/ftv/flow/flow-preview,Menu lateral,Verificada
+Centro de Consumo de Dados,Lista de celulares do dispositivo,/ftv/flow/flow-manage?…,Menu lateral,Verificada
+Centro de Consumo de Dados,Detalhes de tráfego,/ftv/flow/flow-manage/detail?vehicleId=…&vehicleNumber=QMN6B48&deviceId=…&selectTime=2026-09,Link da placa,Verificada
+Identificação do Motorista,Avaliação de Motorista desconhecido,/ftv/ft/system/unknown-driver-alarm?…,Menu lateral,Verificada
+Gestão de veículos,Frota,/ftv/ft/fleet-manage,Menu lateral,Verificada
+Gestão de veículos,Adicionar frota,/ftv/ft/fleet-manage/add-fleet?isAdd=1,Botão Adicionar,Verificada sem salvar
+Gestão de veículos,Gestão de Veículos,/ftv/ft/vehicle-manage?…,Menu lateral,Verificada
+Gestão de veículos,Detalhe do veículo,/ftv/ft/vehicle-manage/detail?vehicleId=…,Link do veículo,Verificada
+Gestão de veículos,Motorista,/ftv/ft/driver-manage/driver?…,Menu lateral,Verificada
+Gestão de veículos,Adicionar motorista,/ftv/ft/driver-manage/driver/add-driver,Botão Adicionar,Verificada sem salvar
+FT Manager — Lista de eventos,Notificação de alerta,/ftm/ft/alarm-notification?…,Menu lateral,Verificada
+FT Manager — Configuração Geral,Registro de login,/ftm/login-log,Menu lateral,Verificada
+FT Manager — Usuário e Privilégios,Usuário,/ftm/user-manage,Menu lateral,Verificada
+FT Manager — Usuário e Privilégios,Adicionar usuário,/ftm/ft/user-manage/add?operateType=add,Botão Adicionar,Verificada sem salvar
+FT Manager — Centro de tarefas,Vídeo da evidência,/ftm/ft/evidence-list,Menu lateral,Verificada
+FT Manager — Centro de tarefas,Detalhes de evidência,/ftm/ft/evidence/detail?evidenceId=…&fromList=1&type=evidence,Link do evento,Verificada
+FT Manager — Centro de tarefas,Tarefas de download de áudio,/ftm/task/issue-audio,Menu lateral,Verificada
+FT Manager — Gestão de embarcadores,Regras de Compartilhamento,/ftm/ft/shipper-vehicle,Menu lateral,Verificada
+FT Manager — Gestão de embarcadores,Criar Regra,/ftm/ft/shipper-vehicle/auth,Botão Criar Regra,Verificada sem salvar
