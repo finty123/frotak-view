@@ -9,8 +9,8 @@ export function CardHeader({ title, description, action, className }: { title: s
   return (
     <div className={cn('panel-header', className)}>
       <div className="min-w-0">
-        <h2 className="truncate text-[15px] font-semibold text-[#20232a]">{title}</h2>
-        {description && <p className="mt-1 text-xs text-[#7a8190]">{description}</p>}
+        <h2 className="truncate text-[15px] font-semibold text-text-strong-950">{title}</h2>
+        {description && <p className="mt-1 text-xs text-text-sub-600">{description}</p>}
       </div>
       {action}
     </div>

@@ -40,7 +40,7 @@ Screenshots and external products may provide evidence or inspiration, but never
 
 ## Guardrails
 
-- Do not impose another product's brand. Use the approved visual reference only for composition and the licensed AlignUI/Preline sources only through the FrotaK visual contract.
+- Do not impose another product's brand. Use the approved visual reference only for composition and the complete free AlignUI sources only through the FrotaK visual contract.
 - Do not treat mobile as compressed desktop.
 - Avoid arbitrary values and decorative effects that do not support product hierarchy.
 - Prefer semantic tokens and shared primitives over duplicated styling.

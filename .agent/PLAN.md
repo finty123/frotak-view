@@ -2,12 +2,14 @@
 
 ## Active milestone
 
-Complete frontend-only visual package for all 36 mapped Smart Cameras routes.
+Maintain the definitive AlignUI-only frontend visual package for all 36 mapped Smart Cameras routes.
 
 ## Milestone scope
 
 - React/Vite application shell with responsive sidebar, topbar, product switcher and user surfaces.
-- Semantic tokens and reusable AlignUI/Preline-derived components.
+- Semantic tokens and reusable AlignUI-derived components.
+- Complete free AlignUI v1.2 coverage: 2 foundations and 49 documented component/utility entries.
+- A single upstream visual system, with runtime dependencies and reference material kept free of secondary UI kits.
 - All 27 FT Vision and 9 FT Manager routes, with deterministic fixtures and navigable derived flows.
 - Client-side filters, tabs, pagination, sorting, selections, drawers, modals and multi-step forms.
 - Map, video, telemetry, chart, report and audit visualizations without external services.

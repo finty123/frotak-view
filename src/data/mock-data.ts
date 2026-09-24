@@ -84,9 +84,9 @@ export const eventSeries = [
 ];
 
 export const eventDistribution = [
-  { name: 'Distância insegura', value: 31, color: '#dc3f4f' },
-  { name: 'Saída de pista', value: 24, color: '#d9850b' },
-  { name: 'Distração', value: 18, color: '#6d3dd3' },
-  { name: 'Telefone', value: 15, color: '#1686d9' },
-  { name: 'Outros', value: 12, color: '#9aa1ad' },
+  { name: 'Distância insegura', value: 31, color: 'var(--color-error-base)' },
+  { name: 'Saída de pista', value: 24, color: 'var(--color-warning-base)' },
+  { name: 'Distração', value: 18, color: 'var(--color-feature-base)' },
+  { name: 'Telefone', value: 15, color: 'var(--color-information-base)' },
+  { name: 'Outros', value: 12, color: 'var(--color-faded-base)' },
 ];

@@ -1,6 +1,6 @@
 # Foundations
 
-These are implementation targets for the first FrotaK design-system pass. The app must expose them as semantic variables so brand tuning does not require rewriting features.
+These are the definitive FrotaK View implementation targets, derived from the free AlignUI Color and Typography foundations and specialized for videotelemetry. The app must expose them as semantic variables so brand tuning never requires rewriting feature code.
 
 ## Color roles
 
@@ -25,6 +25,7 @@ These are implementation targets for the first FrotaK design-system pass. The ap
 
 Rules:
 
+- AlignUI palette scales belong to the foundation layer; route and feature components consume only semantic roles.
 - Map layers and chart series have their own tokens; do not reuse button colors blindly.
 - Use tinted backgrounds plus icon/text for status. Never rely on hue alone.
 - Reserve saturated red for genuinely critical or destructive states.
@@ -32,7 +33,7 @@ Rules:
 
 ## Typography
 
-- Primary family: Inter or the repository's approved neutral sans.
+- Primary family: Inter, matching the approved AlignUI foundation and current repository.
 - Monospace: telemetry identifiers, coordinates, hashes and machine timestamps only.
 - Operational scale: 12, 14, 16, 18, 20, 24, 32 px; marketing-scale AlignUI headings are not default inside the app.
 - Page title: 20–24 px, medium/semibold.
@@ -88,3 +89,25 @@ Rules:
 - `1200–1599`: standard operational desktop, persistent sidebar and optional right rail.
 - `>= 1600`: wider map/video canvas; cap text rails and avoid stretching forms/tables beyond readable measure.
 
+## State token separation
+
+Maintain independent token namespaces for:
+
+- safety severity: informational, low, medium, high, critical;
+- workflow: new, triaged, reviewing, waiting, resolved, dismissed, escalated;
+- connectivity: live, delayed, stale, offline, unknown;
+- evidence: available, processing, partial, unavailable, expired, redacted;
+- action intent: neutral, primary, success, warning, destructive.
+
+Never infer one namespace from another. A critical event can be resolved; an online camera can have unavailable evidence.
+
+## Z-index layers
+
+Use named layers instead of arbitrary values: base content, sticky content, shell chrome, floating controls, dropdown/popover, drawer backdrop, drawer, modal backdrop, modal, toast/critical banner. A component may move between layers only through the centralized token contract.
+
+## Data visualization
+
+- Use a reserved categorical series palette distinct from severity colors.
+- Every chart shows title, scope, units, time range and freshness.
+- Trends use consistent axes when compared; missing intervals remain visible.
+- Pair color with labels, symbols or patterns and provide a concise textual/table alternative.

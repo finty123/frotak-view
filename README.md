@@ -16,7 +16,7 @@ Frontend navegável de videotelemetria construído a partir do mapeamento funcio
 
 - React 18, TypeScript e React Router.
 - Vite e Tailwind CSS 4.
-- Preline para variantes e padrões de composição.
+- AlignUI free v1.2 como sistema visual único, adaptado por componentes próprios do FrotaK View.
 - Primitivos locais derivados dos padrões AlignUI preservados em `.agent/references/visual-system`.
 - Radix UI para overlays acessíveis, Remix Icon para iconografia e Recharts para visualização de dados.
 

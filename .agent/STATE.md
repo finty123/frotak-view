@@ -2,26 +2,26 @@
 
 ## Status
 
-FRONTEND_IMPLEMENTATION_COMPLETE
+ALIGNUI_RUNTIME_REFACTOR_COMPLETE
 
 ## Current milestone
 
-Complete navigable frontend for all 36 mapped routes, using local fixtures and the approved visual system.
+Complete AlignUI-only runtime adoption across all 36 FrotaK View routes.
 
 ## Current focus
 
-Frontend implementation and local visual QA are complete. The next milestone may introduce API contracts and backend integration without changing the approved information architecture or visual language.
+The 36-route frontend is fully refactored to the complete free AlignUI package. Foundations, shared primitives, navigation shell, data displays, feedback, forms, overlays and operational controls consume the definitive semantic token layer through FrotaK-owned component APIs.
 
 ## Last session
 
-Jaxx session `session-2026-09-24T01-47-08-195Z` implemented and verified the frontend package in the Git repository.
+Jaxx session `session-2026-09-24T18-05-32-237Z` installed the complete AlignUI runtime, refactored all route surfaces and completed technical and browser QA.
 
 ## Next steps
 
-1. Preserve the 36-route contract while backend boundaries are introduced.
-2. Replace local fixtures incrementally with typed service adapters.
-3. Add authentication and authorization only when backend scope is approved.
-4. Keep visual regression and accessibility checks in the delivery pipeline.
+1. Use `ALIGNUI-FREE-COVERAGE.md` before creating or changing shared controls.
+2. Extend only the FrotaK component layer; route code must not create parallel primitives.
+3. Preserve the 36-route contract while backend boundaries are introduced.
+4. Keep route, visual, accessibility and production-build checks in the delivery pipeline.
 
 ## Blockers
 

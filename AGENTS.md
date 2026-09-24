@@ -23,6 +23,7 @@ Use these project skills when relevant:
 
 Use `smartcameras-product-guide` before planning, designing, implementing, reviewing, or testing functionality derived from the mapped Smart Cameras platform.
 Use `videotelemetry-visual-system` for every screen, component, layout, map, video, table, dashboard, interaction or visual QA decision. Functional scope comes from the Smart Cameras guide; visual scope comes from the videotelemetry visual system.
+The complete free AlignUI package is the only upstream visual system. Consult `.agent/references/visual-system/ALIGNUI-FREE-COVERAGE.md` before creating or changing shared controls.
 
 Load project documentation progressively. Do not assume an application framework, architecture, design language, milestone, or external integration until the repository establishes it.
 

@@ -31,6 +31,8 @@ const config = {
       "**/.next/**",
       "**/dist/**",
       "**/node_modules/**",
+      "src/components/alignui/**",
+      ".agent/references/visual-system/vendor/**",
       "package-lock.json",
       "**/package.json",
       "**/tsconfig.json",

@@ -12,7 +12,7 @@ export function AppShell() {
       <Sidebar collapsed={collapsed} onCollapsedChange={setCollapsed} mobileOpen={mobileOpen} onMobileOpenChange={setMobileOpen} />
       <div className="min-w-0">
         <Topbar onMobileMenu={() => setMobileOpen(true)} />
-        <main key={pathname} className="page-enter min-h-[calc(100vh-64px)] bg-[#f4f6f9] p-4 md:p-6 xl:p-7">
+        <main key={pathname} className="page-enter min-h-[calc(100vh-64px)] bg-bg-weak-50 p-4 md:p-6 xl:p-7">
           <Outlet />
         </main>
       </div>

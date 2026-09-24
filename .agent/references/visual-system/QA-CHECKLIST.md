@@ -38,9 +38,9 @@
 - [ ] Reduced motion, zoom to 200% and screen-reader announcements were considered.
 - [ ] Essential map/video information has a textual equivalent.
 
-## Provenance
+## AlignUI conformance and provenance
 
-- [ ] No paid/proprietary AlignUI or Preline material was introduced without license.
+- [ ] Every base control maps to `ALIGNUI-FREE-COVERAGE.md` or is documented as an original FrotaK domain composition.
+- [ ] No second general-purpose UI system or paid/proprietary AlignUI material was introduced without a recorded decision and license.
 - [ ] Adapted source retains required license/attribution.
 - [ ] User visual reference influenced composition only; external brand assets were not copied.
-

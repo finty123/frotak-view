@@ -1,40 +1,39 @@
 @import "tailwindcss";
-@source "../node_modules/preline/dist/*.js";
-@import "preline/variants.css";
+@import "./alignui.css";
 
 :root {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #17191f;
-  background: #f4f6f9;
+  color: var(--color-text-strong-950);
+  background: var(--color-bg-weak-50);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  --canvas: #f4f6f9;
-  --surface: #ffffff;
-  --surface-subtle: #f7f8fa;
-  --surface-raised: #ffffff;
-  --surface-inverse: #12151c;
-  --text-strong: #17191f;
-  --text-default: #464b57;
-  --text-muted: #7a8190;
-  --text-soft: #a1a7b2;
-  --stroke-soft: #e7e9ee;
-  --stroke-strong: #d4d8e0;
-  --primary: #335cff;
-  --primary-hover: #2547d0;
-  --primary-soft: #edf2ff;
-  --route: #6d3dd3;
-  --route-soft: #f2edff;
-  --success: #1f9d62;
-  --success-soft: #eaf8f1;
-  --warning: #d9850b;
-  --warning-soft: #fff6e4;
-  --critical: #dc3f4f;
-  --critical-soft: #fff0f2;
-  --info: #1686d9;
-  --info-soft: #edf7ff;
-  --shadow-xs: 0 1px 2px rgba(16, 24, 40, .04);
-  --shadow-sm: 0 3px 12px rgba(16, 24, 40, .06);
-  --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+  --canvas: var(--color-bg-weak-50);
+  --surface: var(--color-bg-white-0);
+  --surface-subtle: var(--color-bg-weak-25);
+  --surface-raised: var(--color-bg-white-0);
+  --surface-inverse: var(--color-bg-strong-950);
+  --text-strong: var(--color-text-strong-950);
+  --text-default: var(--color-text-sub-600);
+  --text-muted: var(--color-text-soft-400);
+  --text-soft: var(--color-text-disabled-300);
+  --stroke-soft: var(--color-stroke-soft-200);
+  --stroke-strong: var(--color-stroke-sub-300);
+  --primary: var(--color-primary-base);
+  --primary-hover: var(--color-primary-darker);
+  --primary-soft: var(--color-primary-lighter);
+  --route: var(--color-feature-base);
+  --route-soft: var(--color-feature-lighter);
+  --success: var(--color-success-base);
+  --success-soft: var(--color-success-lighter);
+  --warning: var(--color-warning-base);
+  --warning-soft: var(--color-warning-lighter);
+  --critical: var(--color-error-base);
+  --critical-soft: var(--color-error-lighter);
+  --info: var(--color-information-base);
+  --info-soft: var(--color-information-lighter);
+  --shadow-xs: var(--shadow-regular-xs);
+  --shadow-sm: var(--shadow-regular-sm);
+  --shadow-lg: var(--shadow-regular-md);
 }
 
 * { box-sizing: border-box; }
@@ -44,16 +43,16 @@ button, input, select, textarea { font: inherit; }
 button { cursor: pointer; }
 button:disabled { cursor: not-allowed; }
 a { color: inherit; text-decoration: none; }
-::selection { color: #fff; background: var(--primary); }
+::selection { color: var(--color-static-white); background: var(--primary); }
 
 :focus-visible {
   outline: 3px solid rgba(51, 92, 255, .24);
   outline-offset: 2px;
 }
 
-.scrollbar-thin { scrollbar-width: thin; scrollbar-color: #cbd0da transparent; }
+.scrollbar-thin { scrollbar-width: thin; scrollbar-color: var(--color-bg-sub-300) transparent; }
 .scrollbar-thin::-webkit-scrollbar { width: 8px; height: 8px; }
-.scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd0da; border-radius: 999px; border: 2px solid transparent; background-clip: padding-box; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: var(--color-bg-sub-300); border-radius: 999px; border: 2px solid transparent; background-clip: padding-box; }
 
 .app-grid {
   display: grid;
@@ -81,13 +80,13 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   overflow: hidden;
   min-height: 420px;
-  background-color: #e9edf1;
+  background-color: var(--color-bg-soft-200);
   background-image:
     linear-gradient(31deg, transparent 48%, rgba(255,255,255,.92) 49%, rgba(255,255,255,.92) 51%, transparent 52%),
     linear-gradient(118deg, transparent 46%, rgba(255,255,255,.82) 47%, rgba(255,255,255,.82) 49%, transparent 50%),
     linear-gradient(165deg, transparent 43%, rgba(212,217,224,.9) 44%, rgba(212,217,224,.9) 45%, transparent 46%),
-    radial-gradient(circle at 18% 24%, #dce3df 0 6%, transparent 6.3%),
-    radial-gradient(circle at 80% 68%, #dce3df 0 10%, transparent 10.4%);
+    radial-gradient(circle at 18% 24%, var(--color-bg-sub-300) 0 6%, transparent 6.3%),
+    radial-gradient(circle at 80% 68%, var(--color-bg-sub-300) 0 10%, transparent 10.4%);
   background-size: 260px 260px, 340px 340px, 220px 220px, 390px 390px, 520px 520px;
 }
 
@@ -117,7 +116,7 @@ a { color: inherit; text-decoration: none; }
   color: white;
   background:
     radial-gradient(circle at 72% 22%, rgba(97, 123, 151, .42), transparent 22%),
-    linear-gradient(180deg, #283744 0 44%, #171b20 45% 55%, #30343a 56% 100%);
+    linear-gradient(180deg, var(--color-slate-700) 0 44%, var(--color-slate-950) 45% 55%, var(--color-slate-800) 56% 100%);
 }
 
 .video-surface::before {
@@ -136,6 +135,10 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 -48px 0 rgba(255,255,255,.08), 0 48px 0 rgba(255,255,255,.08);
 }
 
+.driver-evidence-surface {
+  background: radial-gradient(circle at 50% 32%, var(--color-slate-500) 0 12%, var(--color-slate-700) 13% 26%, var(--color-slate-950) 27% 100%);
+}
+
 .sparkline {
   width: 100%; height: 48px;
   background: linear-gradient(180deg, rgba(51,92,255,.16), transparent);
@@ -143,7 +146,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .skeleton {
-  background: linear-gradient(90deg, #eef0f4 25%, #f8f9fb 50%, #eef0f4 75%);
+  background: linear-gradient(90deg, var(--color-bg-soft-200) 25%, var(--color-bg-weak-25) 50%, var(--color-bg-soft-200) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.4s infinite;
 }
